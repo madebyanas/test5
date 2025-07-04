@@ -824,7 +824,7 @@ function showNotification(message, type = 'info') {
 
 // Fonction pour tester la connexion au script Google Apps Script
 async function testGoogleAppsScriptConnection() {
-    const scriptURL = 'https://script.google.com/macros/s/AKfycbxPiSPIoWWrYytyVnkmSmliunawSHxJTV5lViAPmz4xkdYYloRcPBjLJG5I9Q4pQRG3qA/exec';
+    const scriptURL = 'https://script.google.com/macros/s/AKfycbxPiSPIoWWrYytyVnkmSmliunawSHxJTV5lViAPmz4xkdYYloRcPBjLJG5I9Q4pQRG3qA/exec?${params.toString()}';
     
     // Utiliser une approche JSONP pour contourner les restrictions CORS
     return new Promise((resolve) => {
